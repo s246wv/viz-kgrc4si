@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>mediaGroup polyfill</title>
+        <style>
+        /* .controller +  */
+        video {
+              width: 480px;
+                /* height: 75px; */
+                /* left: -90px;
+                top: -115px; */
+                border: 1px solid black;
+                position: relative;
+                flex: auto;
+      }
+        </style>
+        <script src="./mediagroup.js"></script>
+</head>
+<body>
+
+        <video class="controller" controls mediagroup="pip">
+                <source src="./Movie/instance-segmentation/Admire_paintings0.mp4_output.mp4"></source>
+        </video>
+        <video mediagroup="pip">
+                <source src="./Movie/keypoint-detection/Admire_paintings0.mp4_output.mp4"></source>
+        </video>
+        <video mediagroup="pip">
+                <source src="./Movie/object-detection/Admire_paintings0.mp4_output.mp4"></source>
+        </video>
+        <video mediagroup="pip">
+                <source src="./Movie/panoptic-segmentation/Admire_paintings0.mp4_output.mp4"></source>
+        </video>
+        <video mediagroup="pip">
+                <source src="./Movie/video-caption/Admire_paintings0.mp4"></source>
+        </video>
+</body>
+</html>

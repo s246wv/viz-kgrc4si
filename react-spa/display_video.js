@@ -33,14 +33,30 @@ class VideoViewer extends React.Component {
           },
           opts
         ),
-        e('div', null, this.state.option),
+        e(
+          'div',null,
+          [
+            e('div', null, this.state.option),
+            e('button',
+              {onClick: () => {
+              const mediaElems = document.querySelectorAll("video");
+              if(mediaElems){
+                mediaElems.forEach(element => {
+                  element.load();
+                });
+              }
+              }},
+              "reload video"
+            ),
+          ]
+        ),
         e('video', { class: "controller", controls: true, mediagroup: "pip" }, e('source', { src: "https://github.com/s246wv/viz-kgrc4si/blob/main/Movie/instance-segmentation/" + this.state.option + "_output.mp4?raw=true" }, null)),
         e('video', { mediagroup: "pip" }, e('source', { src: "https://github.com/s246wv/viz-kgrc4si/blob/main/Movie/keypoint-detection/" + this.state.option + "_output.mp4?raw=true" }, null)),
         e('video', { mediagroup: "pip" }, e('source', { src: "https://github.com/s246wv/viz-kgrc4si/blob/main/Movie/object-detection/" + this.state.option + "_output.mp4?raw=true" }, null)),
         e('video', { mediagroup: "pip" }, e('source', { src: "https://github.com/s246wv/viz-kgrc4si/blob/main/Movie/panoptic-segmentation/" + this.state.option + "_output.mp4?raw=true" }, null)),
         e('video', { mediagroup: "pip" }, e('source', { src: "https://github.com/s246wv/viz-kgrc4si/blob/main/Movie/video-caption/" + this.state.option + "?raw=true" }, null))
       ];
-    
+
     return e(
       'div',
       null,

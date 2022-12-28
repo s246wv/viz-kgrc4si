@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add React in One Minute</title>
+    <style>
+      /* .controller +  */
+      video {
+            width: 480px;
+              /* height: 75px; */
+              /* left: -90px;
+              top: -115px; */
+              border: 1px solid black;
+              position: relative;
+              flex: auto;
+      }
+    </style>
+    <script src="./mediagroup.js"></script>
+  </head>
+  <body>
+
+    <h2>Add React in One Minute</h2>
+    <p>This page demonstrates using React with no build tooling.</p>
+    <p>React is loaded as a script tag.</p>
+
+    <!-- We will put our React component inside this div. -->
+    <!-- <div id="like_button_container"></div> -->
+    <div id="display_video_container"></div>
+
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="./display_video.js"></script>
+
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # viz-kgrc4si
 
-This repository provides some visualization of the ナレッジグラフ推論チャレンジ【実社会版】提供データセット. You can display the videos to access [this page](https://s246wv.github.io/viz-kgrc4si/).  
+This repository provides some visualization of the Knowledge Graph Reasoning Challenge for Social Issue Movies. You can display the videos to access [this page](https://s246wv.github.io/viz-kgrc4si/).  
 *The videos are a little old because the official repository provides new videos on 12.28.2022*
 
 ## Acknowledgement and Description

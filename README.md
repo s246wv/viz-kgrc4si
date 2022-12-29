@@ -8,3 +8,4 @@ The data in this repository is made based on the data published in [kgrc4si_2022
 The [instance-segmentation](./Movie/instance-segmentation/), [keypoint-detection](./Movie/keypoint-detection/), [object-detection](./Movie/object-detection/), and [panoptic-segmentation](./Movie/panoptic-segmentation/) are made by using [detectron2](https://github.com/facebookresearch/detectron2).  
 The [video-caption](./Movie/video-caption/) is made by using [PDVC](https://github.com/ttengwang/PDVC).  
 The [PointCloud](./PointCloud/) is made by using [point-e](https://github.com/openai/point-e/tree/main/point_e).  
+I use [mediagroup.js](https://github.com/rwaldron/mediagroup.js) to synchronize multiple videos.  
